@@ -11,4 +11,4 @@ RUN apk add --no-cache bind && \
 
 EXPOSE 53/udp
 
-ENTRYPOINT ["/usr/sbin/named", "-f", "-g"]
+ENTRYPOINT ["/usr/sbin/named", "-f"]
