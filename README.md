@@ -29,7 +29,7 @@ You can also run the DNS Forwarder as a serverless instance with ACI. Once again
 ```
 az container create \
   --resource-group <your-rg> \
-  --name dns-forwarder \
+  --name az-dns-forwarder \
   --image registry.hub.docker.com/haxx0r07/az-dns-forwarder:latest \
   --cpu 1 \
   --memory 0.5 \
