@@ -1,9 +1,9 @@
-FROM alpine:3.12
+FROM alpine:3.18
 
 LABEL maintainer="nico.meisenzahl@whiteduck.de" \
 org.label-schema.vcs-url="https://github.com/whiteducksoftware/az-dns-forwarder"
 
-ADD named.conf /etc/bind/
+COPY named.conf /etc/bind/
 
 RUN apk add --no-cache bind && \
     rm -rf /var/cache/apk/*
